@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="budget.css">
+</head>
+<body>
+    <div class="container">
+        <div class="amounts">
+            <div class="amount">
+                <h3 class="amount-header">BUDGET</h3>
+                <p class="amount-icon"><i class="fa-solid fa-money-bill-1-wave"></i></p>
+                <h2 class="amount-money budget-color">$<h2 class="amount-money budget-color" id="budget">0.00</h2></h2>
+            </div>
+            <div class="amount">
+                <h3 class="amount-header">EXPENSES</h3>
+                <p class="amount-icon"><i class="fa-regular fa-credit-card"></i></p>
+                <h2 class="amount-money expense-color">$<h2 class="amount-money expense-color" id="expense">0.00</h2></h2>
+            </div>
+            <div class="amount">
+                <h3 class="amount-header">BALANCE</h3>
+                <p class="amount-icon"><i class="fa-solid fa-dollar-sign"></i></p>
+                <h2 class="amount-money">$<h2 class="amount-money" id="balance">0.00</h2></h2>
+            </div>
+        </div>
+        <h2 class="expense-intro">Expense List</h2>
+        <div class="expenses-list-container">
+            <ul id="expenses-ul"></ul>
+        </div>
+        <div class="form">
+            <div class="form-inner green">
+                <label for="budget" class="header">Please Enter Your Budget</label>
+                <input type="number" name="budget" class="input green" id="value-of-budget"/>
+                <button class="button green green-hover calculate">Calculate</button>
+            </div>
+            <div class="form-inner red">
+                <label for="budget" class="header">Please Enter Your Expense</label>
+                <input type="text" name="budget" class="input red" id="expense-title">
+                <label for="budget" class="header">Please Enter Your Expense Amount</label>
+                <input type="number" name="budget" class="input red" id="value-of-expense">
+                <button class="button red red-hover calculate" id="create-expense">Add Expense</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="budget.js"></script>
+    
+</body>
+</html>

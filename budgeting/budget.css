@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: auto;
+}
+.container{
+    display: flex;
+    max-width: 1300px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+h4{
+    word-break: break-all;
+    display: flex;
+}
+.amounts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    margin: 60px 0;
+}
+.amount-icon{
+    font-size: 3.5rem;
+    color: rgb(2, 141, 255);
+    padding-bottom: 20px;
+}
+.amount-header{
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+.amount-money{
+    font-size: 2em;
+}
+.budget-color{
+    color: green;
+}
+.expense-color{
+    color: red;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+h2{
+    display: inline-block;
+}
+.form-inner{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 30px;
+    margin: auto;
+}
+.green{
+    border: 2px solid green;
+    border-radius: 5px;
+}
+.red{
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.header{
+    padding-bottom: 20px;
+}
+.input{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.button{
+    width: 120px;
+    padding: 10px;
+}
+.red-hover, .green-hover{
+    transition: all 0.5s ease;
+}
+.red-hover:hover{
+    background-color: red;
+    color: white;
+}
+.green-hover:hover{
+    background-color: green;
+    color: white;
+}
+#expenses-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.expenses-li{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.expense-title{
+    width: 60%;
+}
+.expense-value{
+    width: 25%;
+}
+.crud{
+    display: flex;
+    flex-direction: row;
+}
+.crud p{
+    padding-left: 10px;
+}
+.red-color{
+    color: red;
+    cursor: pointer;
+}
+.blue-color{
+    color: blue;
+    cursor: pointer;
+}
+.expense-intro{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.expenses-list-container{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 60px;
+}
+@media (max-width : 479px) {
+    .amounts{
+        flex-direction: column;
+    }
+    .amount{
+        padding-bottom: 50px;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .form-inner{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .amount:first-child{
+        margin-top: 50px;
+    }
+    #expenses-ul{
+        width: 100%;
+        padding: 60px 0;
+    }
+}
